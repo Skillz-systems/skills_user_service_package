@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Services;
+namespace Skillz;
 
 
 use Symfony\Component\HttpKernel\Exception\HttpException;

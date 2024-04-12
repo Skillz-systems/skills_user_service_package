@@ -1,13 +1,13 @@
 <?php
 
 
-namespace Services;
+namespace Skillz;
 
 
 class UserService extends ApiService
 {
     public function __construct()
     {
-        $this->endpoint = config('microservices.users') . '/api';
+        $this->endpoint = config('skillz.users') . '/api';
     }
 }
