@@ -1,7 +1,7 @@
 {
     "name": "skillz-systems/user-service",
     "require": {
-        "laravel/framework": "^8.51"
+        "laravel/framework": "^10.10"
     },
     "authors": [
         {
