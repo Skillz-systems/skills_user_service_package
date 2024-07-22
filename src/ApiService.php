@@ -18,14 +18,14 @@ abstract class ApiService
             return $response->json();
         }
 
-        throw new HttpException($response->status(),$response->body());
+        throw new HttpException($response->status(), $response->body());
     }
 
     public function getRequest($method, $path, $data = [])
     {
         return \Http::acceptJson()->withHeaders([
-            'Authorization' => 'Bearer ' . request()->cookie('jwt')
-        ])->$method("{$this->endpoint}/{$path}", $data);
+                    'Authorization' => request()->header('Authorization')
+                ])->$method("{$this->endpoint}/{$path}", $data);
     }
 
     public function post($path, $data)
